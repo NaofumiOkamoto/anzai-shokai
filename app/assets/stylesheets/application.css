@@ -13,3 +13,138 @@
  *= require_tree .
  *= require_self
  */
+body {
+	margin: 0px;
+}
+.main {
+  padding-top: 150px;
+}
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header > h1 {
+  margin-left: 10px;
+}
+.company_name > a {
+  text-decoration: none;
+  color: #88b763;
+}
+.kabushikigaisha {
+  font-size: 70%;
+}
+/**************************
+  ヘッダーメニュー項目
+**************************/
+.menu_list {
+  margin: 35px 30px 0 0;
+}
+.company_name, .menu_list > a {
+  padding: 0 15px;
+  color: #88b763;
+	font-weight: bold;
+  text-decoration: none;
+  text-shadow: 
+  #fff 1px 1px 15px,
+  #fff 5px 5px 15px,
+  #fff 10px 10px 15px,
+  #fff 1px -1px 15px,
+  #fff 5px -5px 15px,
+  #fff 10px -10px 15px,
+  #fff -1px 1px 15px,
+  #fff -5px 5px 15px,
+  #fff -10px 10px 15px,
+  #fff -1px -1px 15px,
+  #fff -5px -5px 15px,
+  #fff -10px -10px 15px;
+}
+@media (max-width: 700px) {
+  .menu_list {
+    display: none;
+  }
+}
+
+
+/**************************
+  ハンバーガーメニューボタン
+**************************/
+.hamburger_menu_icon {
+  display: none;
+}
+ /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn5{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  background:#88b763;
+  cursor: pointer;
+  width: 50px;
+  height:50px;
+  border-radius: 5px;
+}
+/*ボタン内側*/
+.openbtn5 span{
+  display: inline-block;
+  transition: all .4s;/*アニメーションの設定*/
+  position: absolute;
+}
+.openbtn5 span:nth-of-type(1),
+.openbtn5 span:nth-of-type(3) {
+  height: 2px;
+  background: #fff;
+  width: 62%;
+  left: 10px;
+}
+.openbtn5 span:nth-of-type(1) {
+  top:13px; 
+}
+.openbtn5 span:nth-of-type(2) {
+  top:19px;
+  left:11px;
+  font-size:0.6rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.openbtn5 span:nth-of-type(3) {
+  top:36px;
+}
+/*activeクラスが付与されると線が回転して×になり、Menu表記をしている2つ目の要素が透過して消える*/
+.openbtn5.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+.openbtn5.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.openbtn5.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+@media (max-width: 700px) {
+  .hamburger_menu_icon {
+    display: block;
+    margin: 20px;
+  }
+}
+.tractor_img {
+	zoom: 5%;
+  display: none;
+}
+/**************************
+  フッター
+**************************/
+
+.footer {
+  background-color: #88b763;
+  height: 200px;
+  margin-top: 100px;
+  text-align: center;
+  color: #fff; 
+}
+.footer > p {
+  padding-top: 100px;
+}

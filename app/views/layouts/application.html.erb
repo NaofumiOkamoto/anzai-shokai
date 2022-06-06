@@ -11,6 +11,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render partial: 'tops/header' %>
+    <div class="main">
+      <%= yield %>
+    </div>
+    <%= render partial: 'tops/footer' %>
   </body>
 </html>
+
+<script>
+  var openbtn5 = document.getElementById('openbtn5');
+  openbtn5.addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
+</script>

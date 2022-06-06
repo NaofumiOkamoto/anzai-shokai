@@ -1,0 +1,19 @@
+<div class="header">
+	<h1 class="company_name">
+		<%= image_tag 'icon.png', class: "top_icon"%>
+		<a href="/">
+			<span class="kabushikigaisha">株式会社</span>
+			<span class="anzaishoukai">安西商会</span>
+		</a>
+	</h1>
+	<div class="menu">
+		<div class="hamburger_menu_icon">
+			<%= image_tag 'tractor.png', class: "tractor_img"%>
+			<div id="openbtn5" class="openbtn5"><span></span><span>Menu</span><span></span></div>
+		</div>
+		<div class="menu_list">
+			<%= link_to '会社概要', about_path %>
+			<%= link_to '営業品目', service_path %>
+		</div>
+	</div>
+</div>
