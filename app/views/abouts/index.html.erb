@@ -1,0 +1,34 @@
+<div>
+	<div class="about">
+		<div class="outline">
+			<h2>会社概要</h2>
+			<p>ABOUT US</p>
+			<hr>
+			<table class="">
+				<tbody>
+				<% @profile_list.each do |list, text| %>
+					<tr class="about_tr">
+						<td class="about_list"><%= list.html_safe %></td>
+						<td class="about_text"><%= text.html_safe %></td>
+					</tr>
+				<% end %>
+				</tbody>
+			</table>
+		</div>
+		<div class="enkaku">
+			<h2>沿革</h2>
+			<p>HISTORY</p>
+			<hr>
+			<div class="timeline">
+				<ul class="timeline-list">
+					<% @histories.each do |year, text| %>
+						<li class="timeline-list-item">
+							<div class="date"><%= year.html_safe %></div>
+							<div class="content"><%= text.html_safe %></div>
+						</li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
