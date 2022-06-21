@@ -1,39 +1,28 @@
-<h1>安西商会</h1>
-<h3>いのちはぐくむ農業を豊かに創る</h3>
-<h3>信頼と情報で豊かな農業の実現に貢献します</h3>
-<div>
-（株）安西商会は、半世紀にわたり農業資材全般、有機肥料を主体に取り扱って参りました。この間、日本の農業は増産第一主義から過剰生産へと至り、減反問題や残留農薬問題など時代の波に翻弄され続けて来たといっても過言ではないでしょう。<br>
-さまざまな問題に直面するたびに私どもが自問自答し、企業理念として守り通してきた事は「農作物とそれを食する消費者とを信頼で結べる様に、確かで完全な資材を提供する」という一点です。<br>
-量産から高品質へ。今や求められるものは大きく変化しています。安全で安心、しかも作物の力を十分に持った真の農作物が強く求められています。そうした時代の要請に応えるため、私どもでは土壌分析を行い、土作りから始める農業のお手伝いを始めています。<br>
-農業の重要性を再認識し、豊かな農業の実現に向けて共に成長していく喜びを望むものです。
+<div class="top">
+  <div class="top_img">
+    <h2 class="top_title">いのちはぐくむ農業を豊かに創る</h2>
+  </div>
+  <div class="top_contents">
+    <div class="top_contents_box">
+      <div class="img_box">
+        <%= image_tag 'main_office.png', class: "office_img"%>
+      </div>
+      <div class="top_text_box">
+        <p><span>半</span>世紀にわたり農業資材全般、<br>有機肥料を主体に取り扱って参りました。</p>
+        この間、日本の農業は増産第一主義から過剰生産へと至り、減反問題や残留農薬問題など時代の波に翻弄され続けて来たといっても過言ではないでしょう。<br>
+        さまざまな問題に直面するたびに私どもが自問自答し、企業理念として守り通してきた事は「農作物とそれを食する消費者とを信頼で結べる様に、確かで完全な資材を提供する」という一点です。<br>
+      </div>
+    </div>
+    <div class="top_contents_box">
+      <div class="top_text_box">
+        <p><span>量</span>産から高品質へ。<br>今や求められるものは大きく変化しています。</p>
+        安全で安心、しかも作物の力を十分に持った真の農作物が強く求められています。そうした時代の要請に応えるため、私どもでは土壌分析を行い、土作りから始める農業のお手伝いを始めています。<br>
+        農業の重要性を再認識し、豊かな農業の実現に向けて共に成長していく喜びを望むものです。
+      </div>
+      <div class="img_box">
+        <%= image_tag 'sub_office.png', class: "sub_office_img"%>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div>
-<h2>会社概要</h2>
-	<table>
-		<tbody>
-		<% @profile_list.each do |list, text| %>
-			<tr>
-				<td><%= list.html_safe %></td>
-				<td><%= text.html_safe %></td>
-			</tr>
-		<% end %>
-		</tbody>
-	</table>
-<h2>沿革</h2>
-	<table>
-		<tbody>
-		<% @histories.each do |year, text| %>
-			<tr>
-				<td><%= year.html_safe %></td>
-				<td><%= text.html_safe %></td>
-			</tr>
-		<% end %>
-		</tbody>
-	</table>
-<h2>営業品目</h2>
-	<% @business_items.each do |list, item| %>
-		<p style="background-color: #e1e0ba"><%= list.html_safe %></p>
-		<p><%= item.html_safe %></p>
-	<% end %>
-</div>
