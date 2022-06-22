@@ -32,6 +32,9 @@ body {
 .header > h1 {
   margin-left: 10px;
 }
+.top_icon {
+	zoom: 33%;
+}
 .company_name > a {
   text-decoration: none;
   color: #88b763;
@@ -39,6 +42,20 @@ body {
 }
 .kabushikigaisha {
   font-size: 70%;
+}
+@media (max-width: 500px) {
+  .header {
+    height: 52px;
+  }
+  .header > h1 {
+    font-size: 120%;
+  }
+  .top_icon {
+    zoom: 23%;
+  }
+  .main {
+    padding-top: 80px;
+  }
 }
 /**************************
   ヘッダーメニュー項目
@@ -71,9 +88,10 @@ body {
   .menu_list {
     display: none;
   }
+  .menu_list_open {
+    display: block;
+  }
 }
-
-
 /**************************
   ハンバーガーメニューボタン
 **************************/
@@ -137,9 +155,35 @@ body {
     margin: 20px;
   }
 }
-.tractor_img {
-	zoom: 5%;
-  display: none;
+@media (max-width: 500px) {
+  .hamburger_menu_icon {
+    margin: 5px 8px 0 0;
+  }
+  .openbtn5{
+    width: 43px;
+    height:43px;
+  }
+  .openbtn5 span:nth-of-type(1),
+  .openbtn5 span:nth-of-type(3) {
+    width: 53%;
+    top:34px;
+  }
+  .openbtn5 span:nth-of-type(1) {
+    top:9px; 
+  }
+  .openbtn5 span:nth-of-type(2) {
+    top:15px;
+    left:7px;
+  }
+  .openbtn5.active span:nth-of-type(1) {
+    top: 16px;
+    left: 16px;
+  }
+  .openbtn5.active span:nth-of-type(3){
+    top: 28px;
+    left: 16px;
+  }
+
 }
 /**************************
   フッター
@@ -148,10 +192,10 @@ body {
 .footer {
   background-color: #88b763;
   height: 200px;
-  margin-top: 100px;
   text-align: center;
   color: #fff; 
 }
 .footer > p {
   padding-top: 100px;
+  margin: 0;
 }
