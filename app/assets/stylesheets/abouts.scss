@@ -23,14 +23,21 @@
 
 }
 table {
-	margin: 50px 0 100px 0;
+	margin: 50px auto 100px auto;
 	border-collapse: collapse;
 }
 td {
 	border-bottom: 1px solid rgba(136,183,99,0.3);
 }
+.about_address_td {
+	display: flex;
+	margin: 10px 0;
+}
+.about_address_td_office {
+	width: 100px;
+}
 .about_list {
-	width: 120px;
+	width: 140px;
 	text-align: center;
 	color: #b2b2b2;
 }
