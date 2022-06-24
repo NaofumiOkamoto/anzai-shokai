@@ -63,15 +63,19 @@
 @media (max-width: 800px) {
 	.top_img {height: 270px;}
 	.top_title {top: 40px; font-size: 190%;}
+	.top_text_box > p {font-size: 120%;}
 }
 @media (max-width: 600px) {
 	.top_img {height: 270px;}
-	.top_title {top: 40px;}
+	.top_title {top: 35px; font-size: 160%}
 }
 @media (max-width: 500px) { /*ここからスマホの想定*/
-	.top_title {top: 75px; font-size: 150%;}
+	.top_title {
+		top: 50px;
+		font-size: 200%;
+	}
 	.top_img {
-	  height: 300px;
+	  height: 400px;
 		background-image: url("sp_top.png");
 	}
 	.top_contents {
@@ -92,5 +96,14 @@
 	}
 	.top_text_box > p {
 		font-size: 100%;
+	}
+}
+@media (max-width: 400px) { /*ここからスマホの想定*/
+	.top_title {
+		top: 50px;
+		font-size: 200%;
+	}
+	.top_img {
+	  height: 300px;
 	}
 }

@@ -43,18 +43,33 @@ body {
 .kabushikigaisha {
   font-size: 70%;
 }
+@media (max-width: 700px) {
+  .header {
+    height: 88px;
+  }
+  .header > h1 {
+    float: left;
+    margin-right: 121px;
+  }
+}
 @media (max-width: 500px) {
   .header {
     height: 52px;
   }
-  .header > h1 {
-    font-size: 120%;
-  }
   .top_icon {
     zoom: 23%;
   }
+  .header > h1 {
+    font-size: 155%;
+    margin: 10px 70px 16px 0;
+  }
   .main {
     padding-top: 80px;
+  }
+}
+@media (max-width: 400px) {
+  .header > h1 {
+    font-size: 125%;
   }
 }
 /**************************
@@ -85,11 +100,52 @@ body {
   color: #c8c8c8;
 }
 @media (max-width: 700px) {
-  .menu_list {
-    display: none;
+  .header {
+    display: block;
+  }
+  .menu {
+    float: right;
+  }
+  .menu_list > div {
+    width: 170px;
+    margin: 0 auto;
   }
   .menu_list_open {
     display: block;
+    background-color: #fff;
+    height: 100vh;
+    margin: 0;
+    float: right;
+    width: 300px;
+    padding: 30px 0 0 0;
+    animation: open-menu 0.3s forwards;
+  }
+  .close_menu{
+    /* animation: close-menu 1.3s forwards; */
+    display: none;
+  }
+  @keyframes open-menu {
+    0% {
+      transform: translateX(200px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  @keyframes close-menu {
+    0% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+  }
+}
+@media (max-width: 700px) {
+  .menu_list_open {
+    width: 200px;
   }
 }
 /**************************
@@ -125,7 +181,7 @@ body {
 }
 .openbtn5 span:nth-of-type(2) {
   top:19px;
-  left:11px;
+  left:10px;
   font-size:0.6rem;
   text-transform: uppercase;
   color: #fff;
@@ -158,6 +214,7 @@ body {
 @media (max-width: 500px) {
   .hamburger_menu_icon {
     margin: 5px 8px 0 0;
+    float: right;
   }
   .openbtn5{
     width: 43px;
