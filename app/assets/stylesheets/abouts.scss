@@ -83,5 +83,20 @@ td {
 			}
 		}
 	}
+} 
+.about_box_sp {
+	border-bottom: 1px solid #000;
+
+}
+@media (max-width: 500px) {
+	.about {
+		font-size: 80%;
+	}
+	.profile_table {
+		display: none;
+	}
+	.profile_table_sp {
+		display: block;
+	}
 }
 

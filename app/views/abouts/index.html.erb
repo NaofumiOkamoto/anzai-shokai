@@ -4,16 +4,8 @@
 			<h2>会社概要</h2>
 			<p>ABOUT US</p>
 			<hr>
-			<table class="">
-				<tbody>
-				<% @profile_list.each do |list, text| %>
-					<tr class="about_tr">
-						<td class="about_list"><%= list.html_safe %></td>
-						<td class="about_text"><%= text.html_safe %></td>
-					</tr>
-				<% end %>
-				</tbody>
-			</table>
+			<%= render partial: "profile_table" %>
+			<%= render partial: "profile_table_sp" %>
 		</div>
 		<div class="enkaku">
 			<h2>沿革</h2>
