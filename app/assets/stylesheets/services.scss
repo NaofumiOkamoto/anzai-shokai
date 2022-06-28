@@ -2,6 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .service {
-    width: 80%;
-    margin: 0 auto;
+	width: 70%;
+	margin: 0 auto;
+}
+.service > div > h2 {
+	text-align: center;
+	color: #88b763;
+	margin-bottom: 0;
+}
+.service > div > p {
+	text-align: center;
+	color: #b2b2b2;
+	margin: 0;
+	font-size: 75%;
+}
+.service > div > hr {
+	width: 110px;
+	height: 1px;
+	background-color: #88b763;
+
 }
