@@ -248,11 +248,30 @@ body {
 
 .footer {
   background-color: #88b763;
-  height: 200px;
-  text-align: center;
+  text-align: left;
   color: #fff; 
+  padding: 33px 0 80px 100px;
 }
-.footer > p {
-  padding-top: 100px;
-  margin: 0;
+.footer a{
+  text-decoration: none;
+  color: #fff
+}
+.footer_company_name {
+  font-size: 130%;
+  font-weight: bold;
+}
+.footer_link_list {
+  margin-left: 30px;
+}
+.footer_link_list > div{
+  margin-left: 40px;
+}
+.footer_link_list p {
+  margin: 0 0 5px 0;
+}
+@media (max-width: 500px) {
+  .footer {
+    font-size: 80%;
+    padding: 20px 0 80px 30px;
+  }
 }
