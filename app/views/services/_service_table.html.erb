@@ -1,0 +1,10 @@
+<table class="service_table">
+	<tbody>
+	<% @business_items.each do |list, text| %>
+		<tr class="about_tr">
+			<td class="about_list"><%= list.html_safe %></td>
+			<td class="about_text"><%= text.html_safe %></td>
+		</tr>
+	<% end %>
+	</tbody>
+</table>

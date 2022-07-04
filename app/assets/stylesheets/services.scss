@@ -20,5 +20,29 @@
 	width: 110px;
 	height: 1px;
 	background-color: #88b763;
-
+}
+.service_table {
+	display: block;
+}
+.service_table_sp {
+	display: none;
+}
+.service_box_sp {
+	border-bottom: 1px solid #dfdfdf;
+}
+@media (max-width: 500px) {
+	.service {
+		font-size: 80%;
+		width: 80%
+	}
+	.service_table {
+		display: none;
+	}
+	.service_table_sp {
+		display: block;
+	}
+	.service_list_sp {
+		text-align: left;
+		margin-top: 40px;
+	}
 }

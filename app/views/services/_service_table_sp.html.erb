@@ -1,0 +1,8 @@
+<div class="service_table_sp">
+	<% @business_items.each do |list, text| %>
+		<div class="service_box_sp">
+			<div class="about_list service_list_sp"><%= list.html_safe %></div>
+			<div class="about_text service_text_sp"><%= text.html_safe %></div>
+		</div>
+	<% end %>
+</div>
