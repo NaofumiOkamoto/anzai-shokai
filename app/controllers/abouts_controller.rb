@@ -3,18 +3,16 @@ class AboutsController < ApplicationController
 		@profile_list = [
 			['名称', '株式会社安西商会'],
 			['所在地', 
-				'
-				<div class="about_address_td">
-					<div class="about_address_td_office">本   社</div>
-					<div>福島県会津若松市河東町郡山字金道8番地</br>
-					0242-75-2001 fax 0242-75-2182</div>
-				</div>
-				<div class="about_address_td">
-					<div class="about_address_td_office">郡山営業所</div>
-					<div>郡山市喜久田町御一丁目70-1</br>
-					024-963-0756 fax 024-959-6858</div>
-				</div>
-				'
+				'<p class="about_address_td">
+					<p class="about_address_td_office">本   社</p>
+					<p>福島県会津若松市河東町郡山字金道8番地</br>
+					0242-75-2001 fax 0242-75-2182</p>
+				</p>
+				<p class="about_address_td">
+					<p class="about_address_td_office">郡山営業所</p>
+					<p>郡山市喜久田町御一丁目70-1</br>
+					024-963-0756 fax 024-959-6858</p>
+				</p>'
 			],
 			['創業', '昭和25年1月'],
 			['設備', 'ビニール加工接着機(1基) ビニール加工ミシン(3台) クインライトオープンアーム(1台) ビニールハドメ加工機(3台) 製袋用各種ミシン(10台)'],

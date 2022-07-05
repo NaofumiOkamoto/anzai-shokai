@@ -1,8 +1,8 @@
 <div class="profile_table_sp">
 	<% @profile_list.each do |list, text| %>
 		<div class="about_box_sp">
-			<p class="about_list about_list_sp"><%= list.html_safe %></p>
-			<p class="about_text about_list_text"><%= text.html_safe %></p>
+			<div class="about_list about_list_sp"><%= list.html_safe %></div>
+			<div class="about_text about_list_text"><%= text.html_safe %></div>
 		</div>
 	<% end %>
 </div>
