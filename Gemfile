@@ -49,6 +49,7 @@ group :development do
   gem 'bcrypt_pbkdf'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
+  gem 'capistrano-rails'
 end
 
 group :test do
