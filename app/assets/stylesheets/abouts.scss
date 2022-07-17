@@ -2,12 +2,33 @@
 	margin: 0 auto;
 	width: 70%;
 }
+.president_message {
+	margin-bottom: 80px;
+}
+.president_profile {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 20px auto;
+}
+.president_profile > p {
+	margin: 25px 0 0 10px;
+
+}
+.president_profile > p > span {
+	font-size: 130%;
+}
+.shacho_img {
+	width: 100px;
+	border-radius: 5px;
+}
 .about > div > h2 {
 	text-align: center;
 	color: #88b763;
 	margin-bottom: 0;
 }
-.about > div > p {
+// .about > div > p {
+.sub_title {
 	text-align: center;
 	color: #b2b2b2;
 	margin: 0;

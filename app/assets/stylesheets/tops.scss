@@ -32,7 +32,7 @@
 .img_box {
 	width: 40%;
 }
-.office_img, .sub_office_img {
+.office_img, .sub_office_img, .service_img {
 	width: 100%;
 }
 .top_text_box {
@@ -47,6 +47,25 @@
 .top_text_box > p > span{
 	font-size: 200%;
 	color: #88b763
+}
+.top_img_area {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.top_img_area > img {
+	width: 50%;
+	margin: 5%;
+	border-radius: 1px;
+}
+.president_message {
+	font-size: 14px;
+	color: #373737
+
+}
+.message_text {
+	text-indent: 1.0em;
 }
 @media (max-width: 1600px) {
 	.top_img {height: 600px;}

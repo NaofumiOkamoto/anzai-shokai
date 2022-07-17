@@ -247,10 +247,15 @@ body {
 **************************/
 
 .footer {
+  display: flex;
   background-color: #88b763;
   text-align: left;
   color: #fff; 
   padding: 33px 0 80px 100px;
+  justify-content: space-between;
+}
+.footer_left {
+  width: 40%;
 }
 .footer a{
   text-decoration: none;
@@ -269,9 +274,25 @@ body {
 .footer_link_list p {
   margin: 0 0 5px 0;
 }
+.footer_img_box {
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+.maru_img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 5%;
+}
 @media (max-width: 500px) {
   .footer {
     font-size: 80%;
     padding: 20px 0 80px 30px;
+  }
+  .maru_img {
+    width: 80px;
+    height: 80px;
+    float: left;
   }
 }
