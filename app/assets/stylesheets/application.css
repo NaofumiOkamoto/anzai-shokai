@@ -251,11 +251,11 @@ body {
   background-color: #88b763;
   text-align: left;
   color: #fff; 
-  padding: 33px 0 80px 100px;
+  padding: 33px 0 80px 20px;
   justify-content: space-between;
 }
 .footer_left {
-  width: 40%;
+  width: 50%;
 }
 .footer a{
   text-decoration: none;
@@ -275,7 +275,7 @@ body {
   margin: 0 0 5px 0;
 }
 .footer_img_box {
-  width: 100%;
+  width: 50%;
   margin: 30px auto;
   text-align: center;
 }
@@ -294,5 +294,6 @@ body {
     width: 80px;
     height: 80px;
     float: left;
+    margin: 0 15%;
   }
 }
