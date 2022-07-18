@@ -257,6 +257,7 @@ body {
 }
 .footer_left {
   width: 50%;
+  padding-left: 70px;
 }
 .footer a{
   text-decoration: none;
@@ -293,6 +294,7 @@ body {
   }
   .footer_left {
     width: 60%;
+    padding-left: 10px;
   }
   .maru_img {
     width: 80px;
