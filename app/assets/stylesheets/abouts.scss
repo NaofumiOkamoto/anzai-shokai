@@ -14,7 +14,6 @@
 }
 .president_profile > p {
 	margin: 25px 0 0 10px;
-
 }
 .president_profile > p > span {
 	font-size: 130%;
@@ -33,7 +32,7 @@
 	text-align: center;
 	color: #b2b2b2;
 	margin: 0;
-	font-size: 75%;
+	font-size: 105%;
 }
 .about > div > hr {
 	width: 110px;
@@ -61,6 +60,14 @@ td {
 }
 .about_text {
 	padding: 20px 0;
+}
+.partner_link > a {
+	color: #88b763;
+	text-decoration: none;
+	padding: 0 8px;
+}
+.partner_link > a:hover {
+	text-decoration: underline;
 }
 .timeline {
 	width: 96%;

@@ -5,4 +5,5 @@ Rails.application.routes.draw do
 
   get '/about', to: 'abouts#index', as: 'about'
   get '/service', to: 'services#index', as: 'service'
+  get '/society', to: 'societies#index', as: 'society'
 end

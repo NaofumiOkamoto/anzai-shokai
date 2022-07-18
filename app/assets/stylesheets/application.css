@@ -76,12 +76,13 @@ body {
   ヘッダーメニュー項目
 **************************/
 .menu_list {
-  margin: 0 30px 0 0;
+  margin: 10px 30px 0 0;
   display: flex;
 }
 .menu_list > div {
-  width: 120px;
+  width: 85px;
   text-align: center;
+  font-size: 80%;
 }
 .menu_list > div > a {
   padding: 0 15px;
