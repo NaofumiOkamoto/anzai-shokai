@@ -289,7 +289,10 @@ body {
 @media (max-width: 500px) {
   .footer {
     font-size: 80%;
-    padding: 20px 0 80px 30px;
+    padding: 20px 0 80px 5px;
+  }
+  .footer_left {
+    width: 60%;
   }
   .maru_img {
     width: 80px;
