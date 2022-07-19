@@ -1,25 +1,30 @@
 <div class="footer">
-	<div class=footer_left>
-		<p class="footer_company_name"><a href="/">株式会社安西商会</a></p>
-		<div class="footer_link_list">
-			<p><a href="/about">ー 会社案内</a></p>
-			<div>
-				<p><a href="/about#president_message">社長メッセージ</a></p>
-				<p><a href="/about#profile">会社概要</a></p>
-				<p><a href="/about#history">沿革</a></p>
-			</div>
-			<p><a href="/service">ー 営業品目</a></p>
-			<p><a href="/society">ー 社会貢献</a></p>
-			<p><a>ー 関連会社</a></p>
+	<div class="footer_content">
+		<div class=footer_left>
+			<p class="footer_company_name"><a href="/">株式会社安西商会</a></p>
+			<div class="footer_link_list">
+				<p><a href="/about">ー 会社案内</a></p>
 				<div>
-					<p class="partner_link"><a href="https://www.sedia-green.co.jp/" target="_blank">渡辺パイプ(株)</a></p>
-					<p class="partner_link"><a href="https://n-seikaken.co.jp/" target="_blank">生科研(株)</a></p>
-					<p class="partner_link"><a href="http://www.taiyoo-kk.co.jp/" target="_blank">タイヨー(株)</a></p>
+					<p><a href="/about#president_message">社長メッセージ</a></p>
+					<p><a href="/about#profile">会社概要</a></p>
+					<p><a href="/about#history">沿革</a></p>
 				</div>
+				<p><a href="/service">ー 営業品目</a></p>
+				<p><a href="/society">ー 社会貢献</a></p>
+				<p><a>ー 関連会社</a></p>
+					<div>
+						<p class="partner_link"><a href="https://www.sedia-green.co.jp/" target="_blank">渡辺パイプ(株)</a></p>
+						<p class="partner_link"><a href="https://n-seikaken.co.jp/" target="_blank">生科研(株)</a></p>
+						<p class="partner_link"><a href="http://www.taiyoo-kk.co.jp/" target="_blank">タイヨー(株)</a></p>
+					</div>
+			</div>
+		</div>
+		<div class="footer_img_box">
+			<%= image_tag 'dog.png', class: "maru_img"%>
+			<%= image_tag 'dog2.png', class: "maru_img"%>
 		</div>
 	</div>
-	<div class="footer_img_box">
-		<%= image_tag 'dog.png', class: "maru_img"%>
-		<%= image_tag 'dog2.png', class: "maru_img"%>
+	<div class="count_area">
+		訪問者数: <%= @total_count %>人
 	</div>
 </div>

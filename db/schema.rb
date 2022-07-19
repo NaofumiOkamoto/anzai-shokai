@@ -10,12 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_28_113532) do
+ActiveRecord::Schema.define(version: 2022_07_19_114504) do
 
   create_table "comments", charset: "utf8mb4", force: :cascade do |t|
     t.integer "page", null: false
     t.integer "order"
     t.text "comment"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "counters", charset: "utf8mb4", force: :cascade do |t|
+    t.integer "count"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
